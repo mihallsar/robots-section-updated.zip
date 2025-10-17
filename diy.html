@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Проекты | IdeaPro.ru</title>
+    <meta name="description" content="Пошаговые инструкции и руководства по созданию собственных роботов">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <div class="robots-section">
+        
+        <!-- Хедер страницы -->
+        <header class="robots-header">
+            <div class="container">
+                <div class="header-content">
+                    <h1 class="header-title">🔧 DIY Проекты</h1>
+                    <p class="header-subtitle">
+                        Создавайте собственных роботов с нашими подробными инструкциями и видеоуроками
+                    </p>
+                    <div style="margin-top: 30px;">
+                        <a href="index.html" class="btn btn-secondary">← Вернуться на главную</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Уровни сложности -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="filters-section">
+                    <h3 class="filters-title">Уровень сложности</h3>
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-filter="all">Все проекты</button>
+                        <button class="filter-btn" data-filter="beginner">Начинающий</button>
+                        <button class="filter-btn" data-filter="intermediate">Средний</button>
+                        <button class="filter-btn" data-filter="advanced">Продвинутый</button>
+                    </div>
+                </div>
+
+                <!-- DIY проекты -->
+                <div class="content-grid" id="diy-grid">
+                    
+                    <!-- Проект 1 -->
+                    <div class="content-card" data-category="beginner">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/diy-robot.jpg" alt="Простой робот" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">Начинающий</span>
+                            <h3 class="card-title">Робот-следопыт на Arduino</h3>
+                            <p class="card-description">
+                                Создайте простого робота, который следует по черной линии. Идеально для первого проекта!
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>⏱️ 3 часа</span>
+                                    <span>💰 2,500₽</span>
+                                </div>
+                                <button class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Начать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Проект 2 -->
+                    <div class="content-card" data-category="beginner">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/lego-robot.jpg" alt="LED робот" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">Начинающий</span>
+                            <h3 class="card-title">Светодиодный куб 4x4x4</h3>
+                            <p class="card-description">
+                                Соберите впечатляющий LED-куб с программируемыми световыми эффектами
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>⏱️ 5 часов</span>
+                                    <span>💰 1,800₽</span>
+                                </div>
+                                <button class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Начать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Проект 3 -->
+                    <div class="content-card" data-category="intermediate">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/arduino-robot.jpg" alt="Робот-машинка" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">Средний</span>
+                            <h3 class="card-title">Робот-машинка с FPV камерой</h3>
+                            <p class="card-description">
+                                Постройте управляемую машинку с видеотрансляцией в реальном времени на смартфон
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>⏱️ 8 часов</span>
+                                    <span>💰 5,500₽</span>
+                                </div>
+                                <button class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Начать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Проект 4 -->
+                    <div class="content-card" data-category="intermediate">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/drone.jpg" alt="Квадрокоптер" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">Средний</span>
+                            <h3 class="card-title">Квадрокоптер с нуля</h3>
+                            <p class="card-description">
+                                Соберите собственный дрон с полетным контроллером и GPS-модулем
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>⏱️ 12 часов</span>
+                                    <span>💰 8,000₽</span>
+                                </div>
+                                <button class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Начать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Проект 5 -->
+                    <div class="content-card" data-category="advanced">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/hexapod-robot.jpg" alt="Робот-манипулятор" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);">Продвинутый</span>
+                            <h3 class="card-title">Робот-манипулятор 6DOF</h3>
+                            <p class="card-description">
+                                Создайте шестиосевой робот-манипулятор с обратной кинематикой и захватом
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>⏱️ 20 часов</span>
+                                    <span>💰 12,000₽</span>
+                                </div>
+                                <button class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Начать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Проект 6 -->
+                    <div class="content-card" data-category="advanced">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/industrial-robot.jpg" alt="Автономный робот" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);">Продвинутый</span>
+                            <h3 class="card-title">Автономный робот с AI</h3>
+                            <p class="card-description">
+                                Постройте робота с компьютерным зрением, SLAM-навигацией и машинным обучением
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>⏱️ 30 часов</span>
+                                    <span>💰 18,000₽</span>
+                                </div>
+                                <button class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Начать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Проект 7 -->
+                    <div class="content-card" data-category="beginner">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/warehouse-robot.jpg" alt="Умный дом" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">Начинающий</span>
+                            <h3 class="card-title">Система умного дома на ESP32</h3>
+                            <p class="card-description">
+                                Создайте базовую систему автоматизации дома с датчиками и управлением через WiFi
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>⏱️ 6 часов</span>
+                                    <span>💰 3,500₽</span>
+                                </div>
+                                <button class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Начать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Проект 8 -->
+                    <div class="content-card" data-category="intermediate">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/robot-toy.jpg" alt="Балансирующий робот" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">Средний</span>
+                            <h3 class="card-title">Самобалансирующийся робот</h3>
+                            <p class="card-description">
+                                Постройте робота на двух колесах с гироскопом и PID-регулятором баланса
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>⏱️ 10 часов</span>
+                                    <span>💰 6,500₽</span>
+                                </div>
+                                <button class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Начать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Проект 9 -->
+                    <div class="content-card" data-category="beginner">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/diy-robot.jpg" alt="Робот-избегатель" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">Начинающий</span>
+                            <h3 class="card-title">Робот-избегатель препятствий</h3>
+                            <p class="card-description">
+                                Создайте робота с ультразвуковыми датчиками, который объезжает препятствия
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>⏱️ 4 часа</span>
+                                    <span>💰 2,800₽</span>
+                                </div>
+                                <button class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Начать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Видеоуроки -->
+        <section class="section-padding" style="background: white;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🎥 Популярные видеоуроки</h2>
+                    <p class="section-subtitle">
+                        Обучающие видео для создания роботов шаг за шагом
+                    </p>
+                </div>
+
+                <div class="content-grid">
+                    
+                    <!-- Видео 1 -->
+                    <div class="content-card">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/diy-robot.jpg" alt="Видеоурок" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category">Видео</span>
+                            <h3 class="card-title">Arduino для начинающих</h3>
+                            <p class="card-description">
+                                Полный курс по основам Arduino: от подключения до первого проекта
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>▶️ 45 мин</span>
+                                    <span>👁️ 15k</span>
+                                </div>
+                                <button class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Смотреть</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Видео 2 -->
+                    <div class="content-card">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/arduino-robot.jpg" alt="Видеоурок" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category">Видео</span>
+                            <h3 class="card-title">Программирование роботов</h3>
+                            <p class="card-description">
+                                Изучите основы программирования микроконтроллеров на C++
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>▶️ 60 мин</span>
+                                    <span>👁️ 12k</span>
+                                </div>
+                                <button class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Смотреть</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Видео 3 -->
+                    <div class="content-card">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/drone.jpg" alt="Видеоурок" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category">Видео</span>
+                            <h3 class="card-title">Сборка квадрокоптера</h3>
+                            <p class="card-description">
+                                Пошаговая инструкция по сборке и настройке FPV дрона
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>▶️ 90 мин</span>
+                                    <span>👁️ 20k</span>
+                                </div>
+                                <button class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Смотреть</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма отправки идей -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">💡 Поделитесь своим проектом</h2>
+                    <p class="section-subtitle">
+                        Создали интересного робота? Расскажите о нем сообществу!
+                    </p>
+                </div>
+
+                <div style="max-width: 700px; margin: 0 auto; background: white; padding: 40px; border-radius: 16px; box-shadow: var(--shadow-md);">
+                    <form id="project-form">
+                        <div class="form-group">
+                            <label class="form-label">Название проекта</label>
+                            <input type="text" class="form-input" placeholder="Например: Робот-помощник для кухни" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Уровень сложности</label>
+                            <select class="form-select" required>
+                                <option value="">Выберите уровень</option>
+                                <option value="beginner">Начинающий</option>
+                                <option value="intermediate">Средний</option>
+                                <option value="advanced">Продвинутый</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Описание проекта</label>
+                            <textarea class="form-textarea" placeholder="Расскажите о вашем проекте, использованных компонентах и возможностях..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Ссылка на видео (опционально)</label>
+                            <input type="url" class="form-input" placeholder="https://youtube.com/...">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Ваш email</label>
+                            <input type="email" class="form-input" placeholder="your@email.com" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить проект</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

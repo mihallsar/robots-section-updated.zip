@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости робототехники | IdeaPro.ru</title>
+    <meta name="description" content="Последние новости, обзоры и статьи о роботах и автоматизации">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <div class="robots-section">
+        
+        <!-- Хедер страницы -->
+        <header class="robots-header">
+            <div class="container">
+                <div class="header-content">
+                    <h1 class="header-title">📰 Новости робототехники</h1>
+                    <p class="header-subtitle">
+                        Будьте в курсе последних событий, инноваций и открытий в мире роботов
+                    </p>
+                    <div style="margin-top: 30px;">
+                        <a href="index.html" class="btn btn-secondary">← Вернуться на главную</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Фильтры новостей -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="filters-section">
+                    <h3 class="filters-title">Категории новостей</h3>
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-filter="all">Все новости</button>
+                        <button class="filter-btn" data-filter="ai">Искусственный интеллект</button>
+                        <button class="filter-btn" data-filter="industry">Промышленность</button>
+                        <button class="filter-btn" data-filter="medicine">Медицина</button>
+                        <button class="filter-btn" data-filter="research">Исследования</button>
+                        <button class="filter-btn" data-filter="products">Новые продукты</button>
+                    </div>
+                </div>
+
+                <!-- Главная новость -->
+                <div style="background: white; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-lg); margin-bottom: 40px;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/ai-interview.jpg" alt="Главная новость" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="padding: 50px;">
+                            <span class="card-category">Главная новость</span>
+                            <h2 style="font-family: var(--font-heading); font-size: 2rem; color: var(--primary-dark); margin: 20px 0;">
+                                Революция в AI: новая модель для роботов превосходит человеческие способности
+                            </h2>
+                            <p style="color: var(--medium-gray); line-height: 1.8; margin-bottom: 25px; font-size: 1.1rem;">
+                                Исследователи из MIT представили прорывную систему машинного обучения, которая позволяет роботам 
+                                обучаться новым задачам в 10 раз быстрее, чем предыдущие модели. Технология уже тестируется 
+                                в промышленных условиях и показывает впечатляющие результаты.
+                            </p>
+                            <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 25px;">
+                                <span style="color: var(--medium-gray);">📅 15 октября 2025</span>
+                                <span style="color: var(--medium-gray);">👁️ 25,000 просмотров</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Читать полностью</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Лента новостей -->
+                <div class="content-grid" id="news-grid">
+                    
+                    <!-- Новость 1 -->
+                    <div class="content-card" data-category="ai">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/ai-interview.jpg" alt="AI новость" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category">AI</span>
+                            <h3 class="card-title">ChatGPT интегрируют в роботов-помощников</h3>
+                            <p class="card-description">
+                                OpenAI объявила о партнерстве с производителями роботов для интеграции языковых моделей
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>📅 14 октября 2025</span>
+                                </div>
+                                <button class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Читать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Новость 2 -->
+                    <div class="content-card" data-category="medicine">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/industrial-robot.jpg" alt="Медицинская робототехника" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category">Медицина</span>
+                            <h3 class="card-title">Робот-хирург провел 1000 операций</h3>
+                            <p class="card-description">
+                                Новая система Da Vinci Xi достигла важной вехи с нулевым процентом осложнений
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>📅 13 октября 2025</span>
+                                </div>
+                                <button class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Читать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Новость 3 -->
+                    <div class="content-card" data-category="industry">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/industrial-robot.jpg" alt="Промышленные роботы" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category">Промышленность</span>
+                            <h3 class="card-title">Tesla представила нового Optimus Gen 3</h3>
+                            <p class="card-description">
+                                Гуманоидный робот третьего поколения получил улучшенную ловкость и автономность
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>📅 12 октября 2025</span>
+                                </div>
+                                <button class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Читать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Новость 4 -->
+                    <div class="content-card" data-category="products">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/robot-vacuum.jpg" alt="Новый продукт" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category">Продукты</span>
+                            <h3 class="card-title">Amazon анонсировала дронов-курьеров</h3>
+                            <p class="card-description">
+                                Новое поколение дронов Prime Air начнет доставку в 50 городах США
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>📅 11 октября 2025</span>
+                                </div>
+                                <button class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Читать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Новость 5 -->
+                    <div class="content-card" data-category="research">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/diy-robot.jpg" alt="Исследования" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category">Исследования</span>
+                            <h3 class="card-title">Роботы научились работать в команде</h3>
+                            <p class="card-description">
+                                Ученые разработали алгоритм для координации действий множества роботов
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>📅 10 октября 2025</span>
+                                </div>
+                                <button class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Читать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Новость 6 -->
+                    <div class="content-card" data-category="ai">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/ai-interview.jpg" alt="AI" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category">AI</span>
+                            <h3 class="card-title">Роботы с эмоциональным интеллектом</h3>
+                            <p class="card-description">
+                                Новая система распознавания эмоций позволяет роботам лучше понимать людей
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>📅 9 октября 2025</span>
+                                </div>
+                                <button class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Читать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Новость 7 -->
+                    <div class="content-card" data-category="industry">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/warehouse-robot.jpg" alt="Складская автоматизация" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category">Промышленность</span>
+                            <h3 class="card-title">Полностью автоматизированный склад</h3>
+                            <p class="card-description">
+                                Alibaba открыла склад, где все операции выполняются роботами без участия людей
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>📅 8 октября 2025</span>
+                                </div>
+                                <button class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Читать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Новость 8 -->
+                    <div class="content-card" data-category="medicine">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/industrial-robot.jpg" alt="Нанороботы" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category">Медицина</span>
+                            <h3 class="card-title">Нанороботы для лечения рака</h3>
+                            <p class="card-description">
+                                Клинические испытания показали эффективность микророботов в борьбе с опухолями
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>📅 7 октября 2025</span>
+                                </div>
+                                <button class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Читать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Новость 9 -->
+                    <div class="content-card" data-category="products">
+                        <img src="https://ideipro.ru/wp-content/uploads/robots/robot-vacuum.jpg" alt="Домашний робот" class="card-image">
+                        <div class="card-content">
+                            <span class="card-category">Продукты</span>
+                            <h3 class="card-title">iRobot выпустила Roomba с AI</h3>
+                            <p class="card-description">
+                                Новый робот-пылесос умеет распознавать объекты и оптимизировать маршрут уборки
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-meta">
+                                    <span>📅 6 октября 2025</span>
+                                </div>
+                                <button class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Читать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Пагинация -->
+                <div class="text-center mt-40">
+                    <div class="flex flex-center gap-20">
+                        <button class="btn btn-outline">← Предыдущая</button>
+                        <span style="color: var(--medium-gray); font-weight: 600;">Страница 1 из 10</span>
+                        <button class="btn btn-outline">Следующая →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Научные статьи -->
+        <section class="section-padding" style="background: white;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">📚 Научные статьи</h2>
+                    <p class="section-subtitle">
+                        Глубокие исследования и академические публикации
+                    </p>
+                </div>
+
+                <div style="max-width: 900px; margin: 0 auto;">
+                    
+                    <!-- Статья 1 -->
+                    <div style="background: var(--light-gray); padding: 30px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid var(--accent-blue);">
+                        <h3 style="font-family: var(--font-heading); font-size: 1.3rem; color: var(--primary-dark); margin-bottom: 10px;">
+                            Advances in Reinforcement Learning for Robotic Manipulation
+                        </h3>
+                        <p style="color: var(--medium-gray); margin-bottom: 15px;">
+                            Авторы: Zhang et al. | MIT | Nature Robotics, 2025
+                        </p>
+                        <p style="color: var(--dark-gray); line-height: 1.7; margin-bottom: 20px;">
+                            Исследование представляет новый подход к обучению роботов манипуляции объектами с использованием 
+                            глубокого обучения с подкреплением. Результаты показывают улучшение точности на 45%.
+                        </p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Читать статью</a>
+                    </div>
+
+                    <!-- Статья 2 -->
+                    <div style="background: var(--light-gray); padding: 30px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid var(--accent-cyan);">
+                        <h3 style="font-family: var(--font-heading); font-size: 1.3rem; color: var(--primary-dark); margin-bottom: 10px;">
+                            Swarm Intelligence in Multi-Robot Systems
+                        </h3>
+                        <p style="color: var(--medium-gray); margin-bottom: 15px;">
+                            Авторы: Kumar et al. | Stanford | Science Robotics, 2025
+                        </p>
+                        <p style="color: var(--dark-gray); line-height: 1.7; margin-bottom: 20px;">
+                            Статья описывает алгоритмы роевого интеллекта для координации действий больших групп роботов 
+                            в динамических средах с препятствиями.
+                        </p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Читать статью</a>
+                    </div>
+
+                    <!-- Статья 3 -->
+                    <div style="background: var(--light-gray); padding: 30px; border-radius: 12px; border-left: 4px solid var(--accent-purple);">
+                        <h3 style="font-family: var(--font-heading); font-size: 1.3rem; color: var(--primary-dark); margin-bottom: 10px;">
+                            Bio-Inspired Soft Robotics for Medical Applications
+                        </h3>
+                        <p style="color: var(--medium-gray); margin-bottom: 15px;">
+                            Авторы: Chen et al. | Harvard | Advanced Materials, 2025
+                        </p>
+                        <p style="color: var(--dark-gray); line-height: 1.7; margin-bottom: 20px;">
+                            Разработка мягких роботов, вдохновленных биологическими системами, для минимально инвазивных 
+                            хирургических процедур и реабилитации.
+                        </p>
+                        <a href="#" class="btn btn-outline" style="padding: 8px 16px; font-size: 0.85rem;">Читать статью</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Подписка на новости -->
+        <section class="section-padding">
+            <div class="container">
+                <div style="background: var(--gradient-primary); padding: 60px 40px; border-radius: 20px; text-align: center; color: white;">
+                    <h2 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 15px;">
+                        📬 Подпишитесь на рассылку
+                    </h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9;">
+                        Получайте последние новости робототехники прямо на почту
+                    </p>
+                    <div style="max-width: 500px; margin: 0 auto; display: flex; gap: 10px;">
+                        <input type="email" class="form-input" placeholder="Ваш email" style="flex: 1;">
+                        <button class="btn btn-primary" style="background: white; color: var(--accent-blue);">Подписаться</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

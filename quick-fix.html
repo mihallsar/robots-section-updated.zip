@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robots Section - Quick Fix</title>
+    <style>
+        /* Временные заглушки вместо изображений */
+        .card-image {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-image::before {
+            content: "🤖";
+            font-size: 48px;
+            position: absolute;
+            opacity: 0.3;
+        }
+        
+        .card-image::after {
+            content: attr(alt);
+            position: relative;
+            z-index: 1;
+            padding: 10px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 8px;
+        }
+        
+        /* Разные цвета для разных типов роботов */
+        .card-image[alt*="пылесос"] { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .card-image[alt*="Arduino"] { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .card-image[alt*="промышлен"] { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .card-image[alt*="газон"] { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .card-image[alt*="игруш"] { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
+        .card-image[alt*="LEGO"] { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+        .card-image[alt*="DIY"] { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
+        .card-image[alt*="окн"] { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); }
+        .card-image[alt*="склад"] { background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%); }
+        .card-image[alt*="собак"] { background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); }
+        .card-image[alt*="Hexapod"] { background: linear-gradient(135deg, #f8b195 0%, #c06c84 100%); }
+        .card-image[alt*="дрон"] { background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); }
+        .card-image[alt*="AI"] { background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%); }
+        
+        /* Анимация */
+        .card-image {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+    </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <h1>🔧 Быстрое решение для изображений</h1>
+    
+    <h2>Проблема:</h2>
+    <p>WordPress не загружает изображения с Unsplash в HTML виджетах.</p>
+    
+    <h2>Решение:</h2>
+    <p>Использовать CSS-заглушки вместо изображений. Выглядит современно и работает всегда!</p>
+    
+    <h2>Как применить:</h2>
+    <ol>
+        <li>Скопируй этот CSS код в начало твоего HTML файла</li>
+        <li>Удали все <code>src="https://images.unsplash.com/..."</code> из img тегов</li>
+        <li>Оставь только <code>alt="название робота"</code></li>
+        <li>Готово! Теперь у каждого робота свой цветной фон</li>
+    </ol>
+    
+    <h2>Пример:</h2>
+    <div style="max-width: 300px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+        <div class="card-image" alt="Робот-пылесос"></div>
+        <div style="padding: 15px;">
+            <h3>Робот-пылесос</h3>
+            <p>Умная уборка дома</p>
+        </div>
+    </div>
+    
+    <h2>Преимущества:</h2>
+    <ul>
+        <li>✅ Работает в любом WordPress</li>
+        <li>✅ Не нужно загружать файлы</li>
+        <li>✅ Быстрая загрузка</li>
+        <li>✅ Современный вид</li>
+        <li>✅ Адаптивный дизайн</li>
+    </ul>
+</body>
+</html>
